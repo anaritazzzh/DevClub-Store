@@ -86,5 +86,21 @@ header nav ul li:hover::after {
     transform: translate(-50%, -50%);
     filter: blur(50px);
     z-index: 1;
+    animation: pulse 4s infinite alternate;
 
+}
+
+@keyframes pulse {
+    0% {
+        opacity: 0.5;
+        transform: translate(-50%, -50%) scale(0.8);
+
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(-50%, -50%) scale(2);
+
+
+    }
 }
